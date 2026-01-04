@@ -15,4 +15,11 @@ urlpatterns = [
     path('posts/add/', views.add_posts, name='add_posts'),
     path('posts/edit/<int:pk>/', views.edit_post, name='edit_post'),
     path('posts/delete/<int:pk>/', views.delete_post, name='delete_post'),
+
+    # users crud url
+    path('users/', views.users, name='users'),
+    path('users/add/', views.add_users, name='add_users'),
+    path('users/edit/<int:pk>/', views.edit_user, name='edit_user'),
+    path('users/delete/<int:pk>/', views.delete_user, name='delete_user'),
 ]
+  
