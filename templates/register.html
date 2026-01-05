@@ -9,6 +9,7 @@
     {% csrf_token %}
     {{ forms | crispy }}
     <button class="btn btn-warning" type="submit">Submit</button>
+    <p class="text-right">Have an account? <span><a href="{% url 'login' %}">login</a></span></p>
 </form>
 
 {% endblock content %}
